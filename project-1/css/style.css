@@ -1,0 +1,530 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed2';
+    src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto2';
+    src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.relative {
+	position: relative;
+  }
+
+
+  .main-img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+  }
+  
+  .main-pic-name {
+	position: absolute;
+	width: 21.4%;
+	top: 30px;
+	left: 30px;
+  }
+
+  .red-small-dot {
+	position: absolute;
+	width: 2%;
+	height: 3%;
+	background-color: #ec2024;
+	z-index: 1;
+	border-radius: 50%;
+	transition: height, width 0.4s;
+  }
+  .red-small-dot:hover {
+	width: 3%;
+	height: 4%;
+  }
+  
+  .white-small-dot {
+	position: absolute;
+	width: 4%;
+	height: 7%;
+	background-color: #ffff;
+	z-index: 1;
+	border-radius: 50%;
+	opacity: 0.4;
+	transition: height, width 0.4s;
+  }
+  .white-small-dot:hover {
+	width: 6%;
+	height: 9%;
+  }
+  
+  .white-big-dot {
+	position: absolute;
+	width: 8%;
+	height: 12%;
+	background-color: #ffff;
+	z-index: 1;
+	border-radius: 50%;
+	opacity: 0.4;
+	transition: height, width 0.4s;
+  }
+  
+  .white-big-dot:hover {
+	width: 10%;
+	height: 15%;
+  }
+
+h3 {
+	color: #000;
+	font-family:'Roboto Condensed';
+	margin-bottom: 10px;
+}
+
+.icon2 img {
+	height: 100px;
+	margin: 20px 15px;
+	float: left;
+}
+
+/*navigation*/
+.navbar {
+	padding: 0;
+}
+
+.navbar-nav li { 
+	font-family: 'Roboto Condensed';
+}
+
+/*end navigation*/
+
+
+/*showcase*/
+#logo {
+	height: 700px;
+}
+
+.nav-icon {
+	height: 100px;
+	width: 49%;
+	margin: 15px 15px;
+}
+
+.navbar-brand {
+	position: absolute;
+	z-index: 99;
+}
+
+.full-menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    top: 0;
+	left: 0;
+	background: #d6d6d6c7;
+	display: none;
+	z-index: 999;
+}
+.close-menu,
+.open-menu {
+	font-size: 20px;
+    display: inline-block;
+	float: right;
+    right: 20px;
+    top: 6px;
+	position: relative;
+	cursor: pointer;
+	z-index: 9999;
+}
+.navbar-nav {
+	flex-direction: column !important;
+	margin: 220px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+	font-weight: bold;
+	font-size: 2.2em;
+}
+
+/*end showcase*/
+
+
+/*three column*/
+#three-column .text-center {
+	margin-top: 30px;
+	color: black;
+}
+
+#three-column .column {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 39px;
+    margin-top: 18px;
+}
+
+.container.grid-icon {
+    width: 86%;
+    margin-left: 10%;
+}
+
+
+.border {
+	background: #EBE8DE;
+	padding: 26px 0;
+	margin-bottom: 15px;
+}
+
+.car {
+	overflow: hidden;
+}
+
+.road {
+	background-image: url('../img/back.png');
+	background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 233px;
+	margin-top: 60px;
+}
+
+.move-car{
+	position: relative;
+    width: 279px;
+    height: 100%;
+    float: right;
+    padding-top: 3%;
+	animation: driving 5s infinite linear;
+	transform: scale(0.5);
+}
+
+/*end three column*/
+
+/*map section*/
+.map-responsive{
+	margin-top: 30px;
+}
+
+.contact-form {
+	position: absolute;
+    bottom: -30px;
+    z-index: 9999;
+    width: 85%;
+    height: 450PX;
+    background: #fff;
+    margin-left: 10%;
+}
+
+.contact-form > .left {
+	width: 40%;
+    background: #ebe8de;
+    float: left;
+    height: 100%;
+}
+
+.contact-form > .left h2 {
+	padding: 10px 35px;
+	font-weight: bold;
+}
+
+.contact-form > .left h3 {
+    padding: 178px 0 5px 90px;
+    font-weight: bold;
+}
+
+.contact-form > .right form h2 {
+	padding: 10px 38px;
+	font-weight: bold;
+	text-transform: uppercase;
+	word-spacing: 15px;
+}
+
+.right input[type=text], textarea {
+	width: 200px;
+    height: 30px;
+    border: 0px;
+    background: #f3f3f3;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px;
+}
+.right textarea {
+	height: 100px;
+	resize: none;
+}
+
+#icon3 {
+	text-align: center;
+}
+
+.contact-form > .right {
+	width: 47%;
+	float: left;
+}
+
+.contact-left {
+	float: left;
+	margin-left: 40px;
+}
+
+.contact-right {
+	float: right;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.contact__form-options {
+	margin-top: 116px;
+}
+
+.contact__form-options span {
+	margin-left: 20px;
+}
+
+.contact__form-gender span {
+	margin-left: 10px;
+}
+
+.contact__form-submit {
+	width: 70px;
+    height: 35px;
+    float: right;
+	position: absolute;
+	top: 88%;
+    right: 40px;
+    bottom: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 1.1em;
+	font-weight: bold;
+	border: 0px;
+    outline: none;
+}
+
+footer {
+	color: #313332;
+    height: 100px;
+    padding-top: 60px;
+    font-weight: 500;
+}
+
+
+.carousel {
+    top: -31px;
+}
+
+
+
+
+@keyframes driving {
+	0% {
+		right: -10%;
+	}
+	10% {
+		bottom: 0%;
+	}
+	20% {
+		transform: scale(1) rotateZ(-5deg);
+	}
+	25% {
+		transform: scale(1) rotateZ(0deg);
+	}
+	40% {
+		transform: scale(1) rotateZ(5deg);
+	}
+	50% {
+		transform: scale(1) rotateZ(0deg);
+	}
+	100% {
+		right: 100%;
+		transform: scale(1) rotateZ(0deg);
+	}
+}
+
+
+/*   CAR CONTAINER   */
+.move-car {
+	animation: driving 8s infinite linear;
+	transform: scale(1);
+}
+.move-car:after {
+	content: "";
+	height: 1px;
+	margin-top: 88px;
+	display: block;
+	z-index: -1;
+	bottom: 0;
+	box-shadow: 2px -15px 25px 2px #000000;
+}
+/*   WHEELS   */
+
+
+
+@media (max-width: 1024px) {
+	.full-menu {
+		width: 100%;
+		height: 51%;
+	}
+	.close-menu,
+	.open-menu {
+    right: 32px;
+    top: 16px;
+	}
+	/* .contact-form > .right {
+		width: 100%;
+		background: #ebe8de;
+	}
+	.contact-form > .left {
+		display: none;
+	} */
+	.contact-form {
+		margin-left: 5%;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.close-menu,
+	.open-menu {
+    right: 32px;
+    top: 16px;
+	}
+	.road {
+    width: 102%;
+    height: 233px;
+}
+
+.move-car{
+    width: 279px;
+    height: 100%;
+    padding-top: 2%;
+}
+ }
+	
+@media (max-width: 768px) {
+	.full-menu {
+		width: 100%;
+		height: 51%;
+	}
+	.move-car{
+		width: 212px;
+    	height: 100%;
+    	padding-top: 6%;
+	}
+	.contact-form > .right {
+		height: 95%;
+	}
+	.contact-form > .right form h1 {
+		text-align: center;
+	}
+	.contact-left {
+		float: left;
+		margin-left: 102px;
+	}
+	.contact-right {
+		position: relative;
+		right: 73px;
+	}
+ }
+	
+@media (max-width: 576px) {
+	.full-menu {
+		width: 100%;
+		height: 38%;
+	}
+
+	.navbar-nav {
+		margin: 41px 0;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		font-size: 1.2em;
+    	margin: -10px;
+	}
+	#menu-icon {
+		width: 23px;
+    	height: 22px;
+	}
+
+	.nav-icon {
+		height: 26px;
+		width: 21%;
+		margin: 5px 6px;
+	}
+
+	.icon2 img {
+		height: 26px;
+    width: 72px;
+    margin: 10px 6px;
+	}
+	
+	h1 {
+		font-size: 20px;
+	}
+	.road {
+		width: 108%;
+		height: 233px;
+		margin-top: 2px;
+	}
+	
+	.move-car{
+		width: 111px;
+    	height: 100%;
+    	padding-top: 20%;
+	}
+ }
+	
+.carousel-caption {
+	text-align: end;
+	right: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: -2%;
+}
+  
+.carousel-caption h5 {
+	padding-right: 5%;
+	color: #ffffff;
+	font-size: 3.75vw;
+	font-family: "RobotoCondensed", sans-serif;
+	font-weight: bold;
+}
+
+.carousel-caption p {
+	padding-right: 5%;
+	color: #ffffff;
+	font-size: 2.03vw;
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
+}
